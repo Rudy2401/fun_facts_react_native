@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* FunFactsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FunFactsAppTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-FunFactsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-FunFactsApp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3070AB66B62E16D260E8B5BB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E10D1762328B22FB0510D4E3 /* PrivacyInfo.xcprivacy */; };
-		7699B88040F8A987B510C191 /* libPods-FunFactsApp-FunFactsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FunFactsApp-FunFactsAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		94A0C9D9A9BA616959DB1DCD /* libPods-FunFactsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 073204E43B414C0CE7658681 /* libPods-FunFactsApp.a */; };
+		BD3C7972C991014D8C52370A /* libPods-FunFactsApp-FunFactsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B56ACC612C3F8735CEC446D3 /* libPods-FunFactsApp-FunFactsAppTests.a */; };
+		D8626A842C12067900C65777 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A7E2C12059100C65777 /* fa-brands-400.ttf */; };
+		D8626A852C12067900C65777 /* fa-brands-400.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A7D2C12059100C65777 /* fa-brands-400.woff2 */; };
+		D8626A862C12067900C65777 /* fa-duotone-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A722C12058C00C65777 /* fa-duotone-900.ttf */; };
+		D8626A872C12067900C65777 /* fa-duotone-900.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A7C2C12059000C65777 /* fa-duotone-900.woff2 */; };
+		D8626A882C12067900C65777 /* fa-light-300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A702C12058A00C65777 /* fa-light-300.ttf */; };
+		D8626A892C12067900C65777 /* fa-light-300.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A732C12058C00C65777 /* fa-light-300.woff2 */; };
+		D8626A8A2C12067900C65777 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A802C12059200C65777 /* fa-regular-400.ttf */; };
+		D8626A8B2C12067900C65777 /* fa-regular-400.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A7A2C12058F00C65777 /* fa-regular-400.woff2 */; };
+		D8626A8C2C12067900C65777 /* fa-sharp-light-300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A7B2C12059000C65777 /* fa-sharp-light-300.ttf */; };
+		D8626A8D2C12067900C65777 /* fa-sharp-light-300.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A772C12058E00C65777 /* fa-sharp-light-300.woff2 */; };
+		D8626A8E2C12067900C65777 /* fa-sharp-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A782C12058E00C65777 /* fa-sharp-regular-400.ttf */; };
+		D8626A8F2C12067900C65777 /* fa-sharp-regular-400.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A742C12058C00C65777 /* fa-sharp-regular-400.woff2 */; };
+		D8626A902C12067900C65777 /* fa-sharp-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A752C12058D00C65777 /* fa-sharp-solid-900.ttf */; };
+		D8626A912C12067900C65777 /* fa-sharp-solid-900.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A712C12058B00C65777 /* fa-sharp-solid-900.woff2 */; };
+		D8626A922C12067900C65777 /* fa-sharp-thin-100.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A6F2C12058900C65777 /* fa-sharp-thin-100.ttf */; };
+		D8626A932C12067900C65777 /* fa-sharp-thin-100.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A792C12058F00C65777 /* fa-sharp-thin-100.woff2 */; };
+		D8626A942C12067900C65777 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A6E2C12058900C65777 /* fa-solid-900.ttf */; };
+		D8626A952C12067900C65777 /* fa-solid-900.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A762C12058D00C65777 /* fa-solid-900.woff2 */; };
+		D8626A962C12067900C65777 /* fa-thin-100.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A7F2C12059200C65777 /* fa-thin-100.ttf */; };
+		D8626A972C12067900C65777 /* fa-thin-100.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A812C12059300C65777 /* fa-thin-100.woff2 */; };
+		D8626A982C12067900C65777 /* fa-v4compatibility.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8626A822C12059300C65777 /* fa-v4compatibility.ttf */; };
+		D8626A992C12067900C65777 /* fa-v4compatibility.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = D8626A832C12059400C65777 /* fa-v4compatibility.woff2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +53,7 @@
 		00E356EE1AD99517003FC87E /* FunFactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunFactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FunFactsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunFactsAppTests.m; sourceTree = "<group>"; };
+		073204E43B414C0CE7658681 /* libPods-FunFactsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFactsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* FunFactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FunFactsApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = FunFactsApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -38,14 +61,35 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FunFactsApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FunFactsApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = FunFactsApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-FunFactsApp-FunFactsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFactsApp-FunFactsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-FunFactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp.debug.xcconfig"; path = "Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-FunFactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp.release.xcconfig"; path = "Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-FunFactsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFactsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38B870D939DD3BFEC0EBCC6C /* Pods-FunFactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp.debug.xcconfig"; path = "Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		413D5A35A10F63FD76426E00 /* Pods-FunFactsApp-FunFactsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp-FunFactsAppTests.release.xcconfig"; path = "Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		51F69EA1E757CC80A71548A7 /* Pods-FunFactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp.release.xcconfig"; path = "Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FunFactsApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-FunFactsApp-FunFactsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp-FunFactsAppTests.release.xcconfig"; path = "Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		E10D1762328B22FB0510D4E3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = FunFactsApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		94036CFCA86588EE2B3D1322 /* Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B56ACC612C3F8735CEC446D3 /* libPods-FunFactsApp-FunFactsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunFactsApp-FunFactsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8626A6E2C12058900C65777 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
+		D8626A6F2C12058900C65777 /* fa-sharp-thin-100.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-thin-100.ttf"; sourceTree = "<group>"; };
+		D8626A702C12058A00C65777 /* fa-light-300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-light-300.ttf"; sourceTree = "<group>"; };
+		D8626A712C12058B00C65777 /* fa-sharp-solid-900.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-solid-900.woff2"; sourceTree = "<group>"; };
+		D8626A722C12058C00C65777 /* fa-duotone-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-duotone-900.ttf"; sourceTree = "<group>"; };
+		D8626A732C12058C00C65777 /* fa-light-300.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-light-300.woff2"; sourceTree = "<group>"; };
+		D8626A742C12058C00C65777 /* fa-sharp-regular-400.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-regular-400.woff2"; sourceTree = "<group>"; };
+		D8626A752C12058D00C65777 /* fa-sharp-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-solid-900.ttf"; sourceTree = "<group>"; };
+		D8626A762C12058D00C65777 /* fa-solid-900.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.woff2"; sourceTree = "<group>"; };
+		D8626A772C12058E00C65777 /* fa-sharp-light-300.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-light-300.woff2"; sourceTree = "<group>"; };
+		D8626A782C12058E00C65777 /* fa-sharp-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-regular-400.ttf"; sourceTree = "<group>"; };
+		D8626A792C12058F00C65777 /* fa-sharp-thin-100.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-thin-100.woff2"; sourceTree = "<group>"; };
+		D8626A7A2C12058F00C65777 /* fa-regular-400.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.woff2"; sourceTree = "<group>"; };
+		D8626A7B2C12059000C65777 /* fa-sharp-light-300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-sharp-light-300.ttf"; sourceTree = "<group>"; };
+		D8626A7C2C12059000C65777 /* fa-duotone-900.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-duotone-900.woff2"; sourceTree = "<group>"; };
+		D8626A7D2C12059100C65777 /* fa-brands-400.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.woff2"; sourceTree = "<group>"; };
+		D8626A7E2C12059100C65777 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
+		D8626A7F2C12059200C65777 /* fa-thin-100.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-thin-100.ttf"; sourceTree = "<group>"; };
+		D8626A802C12059200C65777 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
+		D8626A812C12059300C65777 /* fa-thin-100.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-thin-100.woff2"; sourceTree = "<group>"; };
+		D8626A822C12059300C65777 /* fa-v4compatibility.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-v4compatibility.ttf"; sourceTree = "<group>"; };
+		D8626A832C12059400C65777 /* fa-v4compatibility.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-v4compatibility.woff2"; sourceTree = "<group>"; };
+		E10D1762328B22FB0510D4E3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = FunFactsApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -54,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-FunFactsApp-FunFactsAppTests.a in Frameworks */,
+				BD3C7972C991014D8C52370A /* libPods-FunFactsApp-FunFactsAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-FunFactsApp.a in Frameworks */,
+				94A0C9D9A9BA616959DB1DCD /* libPods-FunFactsApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +133,7 @@
 		13B07FAE1A68108700A75B9A /* FunFactsApp */ = {
 			isa = PBXGroup;
 			children = (
+				D8626A6D2C12055E00C65777 /* Resources */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -105,8 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-FunFactsApp.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-FunFactsApp-FunFactsAppTests.a */,
+				073204E43B414C0CE7658681 /* libPods-FunFactsApp.a */,
+				B56ACC612C3F8735CEC446D3 /* libPods-FunFactsApp-FunFactsAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,12 +190,41 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-FunFactsApp.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-FunFactsApp.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-FunFactsApp-FunFactsAppTests.release.xcconfig */,
+				38B870D939DD3BFEC0EBCC6C /* Pods-FunFactsApp.debug.xcconfig */,
+				51F69EA1E757CC80A71548A7 /* Pods-FunFactsApp.release.xcconfig */,
+				94036CFCA86588EE2B3D1322 /* Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig */,
+				413D5A35A10F63FD76426E00 /* Pods-FunFactsApp-FunFactsAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D8626A6D2C12055E00C65777 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8626A7E2C12059100C65777 /* fa-brands-400.ttf */,
+				D8626A7D2C12059100C65777 /* fa-brands-400.woff2 */,
+				D8626A722C12058C00C65777 /* fa-duotone-900.ttf */,
+				D8626A7C2C12059000C65777 /* fa-duotone-900.woff2 */,
+				D8626A702C12058A00C65777 /* fa-light-300.ttf */,
+				D8626A732C12058C00C65777 /* fa-light-300.woff2 */,
+				D8626A802C12059200C65777 /* fa-regular-400.ttf */,
+				D8626A7A2C12058F00C65777 /* fa-regular-400.woff2 */,
+				D8626A7B2C12059000C65777 /* fa-sharp-light-300.ttf */,
+				D8626A772C12058E00C65777 /* fa-sharp-light-300.woff2 */,
+				D8626A782C12058E00C65777 /* fa-sharp-regular-400.ttf */,
+				D8626A742C12058C00C65777 /* fa-sharp-regular-400.woff2 */,
+				D8626A752C12058D00C65777 /* fa-sharp-solid-900.ttf */,
+				D8626A712C12058B00C65777 /* fa-sharp-solid-900.woff2 */,
+				D8626A6F2C12058900C65777 /* fa-sharp-thin-100.ttf */,
+				D8626A792C12058F00C65777 /* fa-sharp-thin-100.woff2 */,
+				D8626A6E2C12058900C65777 /* fa-solid-900.ttf */,
+				D8626A762C12058D00C65777 /* fa-solid-900.woff2 */,
+				D8626A7F2C12059200C65777 /* fa-thin-100.ttf */,
+				D8626A812C12059300C65777 /* fa-thin-100.woff2 */,
+				D8626A822C12059300C65777 /* fa-v4compatibility.ttf */,
+				D8626A832C12059400C65777 /* fa-v4compatibility.woff2 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,12 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FunFactsAppTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				C0C1D3933A8A9056E52E1BEB /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				9C10C24736A59F555E00C2E6 /* [CP] Embed Pods Frameworks */,
+				462B34B95AE22AEFCCCF3C9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,13 +255,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FunFactsApp" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				2A1DB1C1ABBB83459D757964 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				B26491AC880A09E922B0C70B /* [CP] Embed Pods Frameworks */,
+				212B22B4831520F243C85C90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +320,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8626A842C12067900C65777 /* fa-brands-400.ttf in Resources */,
+				D8626A852C12067900C65777 /* fa-brands-400.woff2 in Resources */,
+				D8626A862C12067900C65777 /* fa-duotone-900.ttf in Resources */,
+				D8626A872C12067900C65777 /* fa-duotone-900.woff2 in Resources */,
+				D8626A882C12067900C65777 /* fa-light-300.ttf in Resources */,
+				D8626A892C12067900C65777 /* fa-light-300.woff2 in Resources */,
+				D8626A8A2C12067900C65777 /* fa-regular-400.ttf in Resources */,
+				D8626A8B2C12067900C65777 /* fa-regular-400.woff2 in Resources */,
+				D8626A8C2C12067900C65777 /* fa-sharp-light-300.ttf in Resources */,
+				D8626A8D2C12067900C65777 /* fa-sharp-light-300.woff2 in Resources */,
+				D8626A8E2C12067900C65777 /* fa-sharp-regular-400.ttf in Resources */,
+				D8626A8F2C12067900C65777 /* fa-sharp-regular-400.woff2 in Resources */,
+				D8626A902C12067900C65777 /* fa-sharp-solid-900.ttf in Resources */,
+				D8626A912C12067900C65777 /* fa-sharp-solid-900.woff2 in Resources */,
+				D8626A922C12067900C65777 /* fa-sharp-thin-100.ttf in Resources */,
+				D8626A932C12067900C65777 /* fa-sharp-thin-100.woff2 in Resources */,
+				D8626A942C12067900C65777 /* fa-solid-900.ttf in Resources */,
+				D8626A952C12067900C65777 /* fa-solid-900.woff2 in Resources */,
+				D8626A962C12067900C65777 /* fa-thin-100.ttf in Resources */,
+				D8626A972C12067900C65777 /* fa-thin-100.woff2 in Resources */,
+				D8626A982C12067900C65777 /* fa-v4compatibility.ttf in Resources */,
+				D8626A992C12067900C65777 /* fa-v4compatibility.woff2 in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3070AB66B62E16D260E8B5BB /* PrivacyInfo.xcprivacy in Resources */,
@@ -271,46 +367,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		212B22B4831520F243C85C90 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FunFactsApp-FunFactsAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		2A1DB1C1ABBB83459D757964 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,7 +406,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		462B34B95AE22AEFCCCF3C9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C10C24736A59F555E00C2E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,38 +440,43 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		B26491AC880A09E922B0C70B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp/Pods-FunFactsApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		C0C1D3933A8A9056E52E1BEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunFactsApp-FunFactsAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FunFactsApp-FunFactsAppTests/Pods-FunFactsApp-FunFactsAppTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,7 +512,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig */;
+			baseConfigurationReference = 94036CFCA86588EE2B3D1322 /* Pods-FunFactsApp-FunFactsAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -443,7 +539,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-FunFactsApp-FunFactsAppTests.release.xcconfig */;
+			baseConfigurationReference = 413D5A35A10F63FD76426E00 /* Pods-FunFactsApp-FunFactsAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -467,13 +563,15 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-FunFactsApp.debug.xcconfig */;
+			baseConfigurationReference = 38B870D939DD3BFEC0EBCC6C /* Pods-FunFactsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = FunFactsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,6 +584,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FunFactsApp;
+				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -494,12 +593,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-FunFactsApp.release.xcconfig */;
+			baseConfigurationReference = 51F69EA1E757CC80A71548A7 /* Pods-FunFactsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = FunFactsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +613,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FunFactsApp;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -552,6 +654,7 @@
 				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -635,6 +738,7 @@
 				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;

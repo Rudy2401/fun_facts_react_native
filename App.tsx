@@ -1,118 +1,275 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import React from 'react';
-import type {PropsWithChildren} from 'react';
+import 'react-native-gesture-handler';
+import 'react-native-get-random-values';
+import React, { useEffect } from 'react';
+import { Amplify, Hub } from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { View, TouchableOpacity, Image, StyleSheet, Text } from 'react-native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
+  faHouse,
+  faSearch,
+  faBell,
+  faBars,
+} from '@fortawesome/pro-light-svg-icons';
 import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+  faCirclePlus,
+  faHouse as faHouseSolid,
+  faSearch as faSearchSolid,
+  faBell as faBellSolid,
+  faBars as faBarsSolid,
+} from '@fortawesome/pro-solid-svg-icons';
+import MainScreen from './screens/MainScreen';
+import AddFunFactScreen from './screens/AddFunFactScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import SearchScreen from './screens/SearchScreen';
+import SettingsScreen from './screens/SettingsScreen';
+import LeaderboardScreen from './screens/LeaderboardScreen';
+import LandmarkDetailScreen from './screens/LandmarkDetailScreen';
+import ReportScreen from './screens/ReportScreen';
+import DisputeScreen from './screens/DisputeScreen';
+import { withAuthenticator } from '@aws-amplify/ui-react-native';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+Amplify.configure(awsconfig);
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+
+function MainTabs({ navigation }) {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ color, size, focused }) => {
+          let iconName = '';
+          let iconComponent = (
+            <Icon name={iconName} size={size} color={color} />
+          );
+
+          if (route.name === 'Home') {
+            iconName = focused ? faHouseSolid : faHouse;
+            iconComponent = (
+              <FontAwesomeIcon icon={iconName} size={20} color={color} />
+            );
+          } else if (route.name === 'Search') {
+            iconName = focused ? faSearchSolid : faSearch;
+            iconComponent = (
+              <FontAwesomeIcon icon={iconName} size={20} color={color} />
+            );
+          } else if (route.name === 'Notifications') {
+            iconName = focused ? faBellSolid : faBell;
+            iconComponent = (
+              <FontAwesomeIcon icon={iconName} size={20} color={color} />
+            );
+          } else if (route.name === 'Menu') {
+            iconName = focused ? faBarsSolid : faBars;
+            iconComponent = (
+              <FontAwesomeIcon icon={iconName} size={20} color={color} />
+            );
+          }
+
+          return iconComponent;
+        },
+        tabBarActiveTintColor: 'green',
+        tabBarInactiveTintColor: 'gray',
+        tabBarStyle: {
+          backgroundColor: '#f8f8f8',
+        },
+        tabBarLabelStyle: {
+          fontSize: 12,
+        },
+        headerShown: false,
+      })}>
+      <Tab.Screen name="Home" component={MainScreen} />
+      <Tab.Screen name="Search" component={SearchScreen} />
+      <Tab.Screen
+        name="AddFunFact"
+        component={AddFunFactScreen}
+        options={{
+          tabBarButton: props => (
+            <TouchableOpacity
+              {...props}
+              style={styles.addButton}
+              onPress={() => navigation.navigate('AddFunFact')}>
+              <FontAwesomeIcon icon={faCirclePlus} size={40} color="green" />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Tab.Screen name="Notifications" component={MainScreen} />
+      <Tab.Screen name="Menu" component={MenuScreen} />
+    </Tab.Navigator>
+  );
+}
+
+const MenuScreen = ({ navigation }) => {
+  return (
+    <View style={styles.menuContainer}>
+      <View style={styles.menuRow}>
+        <TouchableOpacity
+          style={styles.menuButton}
+          onPress={() => navigation.navigate('Leaderboard')}>
+          <Icon name="leaderboard" size={50} color="black" />
+          <Text style={styles.menuButtonText}>Leaderboard</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.menuButton}
+          onPress={() => navigation.navigate('Settings')}>
+          <Icon name="settings" size={50} color="black" />
+          <Text style={styles.menuButtonText}>Settings</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.menuRow}>
+        <TouchableOpacity
+          style={styles.menuButton}
+          onPress={() => navigation.navigate('About')}>
+          <Icon name="info" size={50} color="black" />
+          <Text style={styles.menuButtonText}>About</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.menuButton}
+          onPress={() => navigation.navigate('Help')}>
+          <Icon name="help" size={50} color="black" />
+          <Text style={styles.menuButtonText}>Help</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
-}
+};
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+const AboutScreen = () => (
+  <View style={styles.screenContainer}>
+    <Text>About Screen</Text>
+  </View>
+);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+const HelpScreen = () => (
+  <View style={styles.screenContainer}>
+    <Text>Help Screen</Text>
+  </View>
+);
+
+function App() {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    const listener = data => {
+      switch (data.payload.event) {
+        case 'signIn':
+          console.log('user signed in');
+          navigation.navigate('Main');
+          break;
+        case 'signUp':
+          console.log('user signed up');
+          break;
+        case 'signOut':
+          console.log('user signed out');
+          break;
+        case 'signIn_failure':
+          console.log('user sign in failed');
+          break;
+        case 'configured':
+          console.log('the Auth module is configured');
+          break;
+      }
+    };
+
+    Hub.listen('auth', listener);
+
+    return () => {
+      Hub.remove('auth', listener);
+    };
+  }, [navigation]);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Main">
+        <Stack.Screen
+          name="Main"
+          component={MainTabs}
+          options={({ navigation }) => ({
+            headerRight: () => (
+              <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+                <Image
+                  source={{ uri: 'https://your-user-profile-image-url' }}
+                  style={styles.profileImage}
+                />
+              </TouchableOpacity>
+            ),
+          })}
+        />
+        <Stack.Screen name="AddFunFact" component={AddFunFactScreen} />
+        <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />
+        <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="LandmarkDetail" component={LandmarkDetailScreen} />
+        <Stack.Screen name="About" component={AboutScreen} />
+        <Stack.Screen name="Help" component={HelpScreen} />
+        <Stack.Screen name="Menu" component={MenuScreen} />
+        <Stack.Screen name="Report" component={ReportScreen} />
+        <Stack.Screen name="Dispute" component={DisputeScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
+export default withAuthenticator(App);
+
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  addButton: {
+    position: 'relative',
+    bottom: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f8f8f8',
+    borderWidth: 2,
+    borderColor: 'green',
+    borderRadius: 35,
+    width: 60,
+    height: 60,
+    zIndex: 1,
+    elevation: 5,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  tabBarMiddleButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'transparent',
   },
-  sectionDescription: {
-    marginTop: 8,
+  menuContainer: {
+    flex: 1,
+    padding: 10,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  menuRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    width: '100%',
+    marginBottom: 20,
+  },
+  menuButton: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    width: '40%',
+  },
+  menuButtonText: {
+    marginTop: 10,
     fontSize: 18,
-    fontWeight: '400',
+    textAlign: 'center',
   },
-  highlight: {
-    fontWeight: '700',
+  screenContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  profileImage: {
+    width: 25,
+    height: 25,
+    borderRadius: 12.5,
+    marginRight: 10,
   },
 });
-
-export default App;

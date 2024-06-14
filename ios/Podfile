@@ -36,5 +36,10 @@ target 'FunFactsApp' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    # installer.pods_project.targets.each do |t|
+    #   t.build_configurations.each do |bc|
+    #      bc.build_settings['ARCHS[sdk=iphonesimulator*]'] =  `uname -m`
+    #   end
+    # end
   end
 end
