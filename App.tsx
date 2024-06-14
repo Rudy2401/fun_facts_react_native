@@ -1,14 +1,14 @@
 import 'react-native-gesture-handler';
 import 'react-native-get-random-values';
-import React, { useEffect } from 'react';
-import { Amplify, Hub } from 'aws-amplify';
+import React, {useEffect} from 'react';
+import {Amplify, Hub} from 'aws-amplify';
 import awsconfig from './aws-exports';
-import { View, TouchableOpacity, Image, StyleSheet, Text } from 'react-native';
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {View, TouchableOpacity, Image, StyleSheet, Text} from 'react-native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {
   faHouse,
   faSearch,
@@ -31,18 +31,18 @@ import LeaderboardScreen from './screens/LeaderboardScreen';
 import LandmarkDetailScreen from './screens/LandmarkDetailScreen';
 import ReportScreen from './screens/ReportScreen';
 import DisputeScreen from './screens/DisputeScreen';
-import { withAuthenticator } from '@aws-amplify/ui-react-native';
+import {withAuthenticator} from '@aws-amplify/ui-react-native';
 
 Amplify.configure(awsconfig);
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-function MainTabs({ navigation }) {
+function MainTabs({navigation}) {
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ color, size, focused }) => {
+      screenOptions={({route}) => ({
+        tabBarIcon: ({color, size, focused}) => {
           let iconName = '';
           let iconComponent = (
             <Icon name={iconName} size={size} color={color} />
@@ -104,7 +104,7 @@ function MainTabs({ navigation }) {
   );
 }
 
-const MenuScreen = ({ navigation }) => {
+const MenuScreen = ({navigation}) => {
   return (
     <View style={styles.menuContainer}>
       <View style={styles.menuRow}>
@@ -189,11 +189,11 @@ function App() {
         <Stack.Screen
           name="Main"
           component={MainTabs}
-          options={({ navigation }) => ({
+          options={({navigation}) => ({
             headerRight: () => (
               <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
                 <Image
-                  source={{ uri: 'https://your-user-profile-image-url' }}
+                  source={{uri: 'https://your-user-profile-image-url'}}
                   style={styles.profileImage}
                 />
               </TouchableOpacity>
